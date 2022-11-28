@@ -1,0 +1,15 @@
+import { Meta, Source } from "@storybook/addon-docs";
+
+<Meta title="Example" />
+
+# Introduction
+
+The presence of the `Source` tag below will make this story crash on `7.0.0-alpha.52`, but works on `7.0.0-alpha.51`.
+
+Try removing it or downgrading to `7.0.0-alpha-51`.
+
+<Source
+  language="css"
+  dark
+  code={[".class {", "  color: black;", "}"].join("\n")}
+/>
